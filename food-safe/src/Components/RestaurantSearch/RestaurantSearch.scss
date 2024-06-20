@@ -1,0 +1,82 @@
+@use "../../styles/partials/global" as *;
+
+section {
+	margin-bottom: 2rem;
+}
+
+.restaurant-search {
+	height: 10rem;
+	margin: 0 1rem;
+
+	h3 {
+		text-align: center;
+	}
+}
+
+form {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+
+	.search-field {
+		display: flex;
+		border: 1px solid $SecondaryGreyMercury;
+		border-radius: 4px;
+		background-color: $SecondaryWhiteAlabaster;
+		width: 70%;
+
+		img {
+			padding-left: 0.5rem;
+		}
+
+		input {
+			padding: 0.625rem;
+			border: none;
+			flex-grow: 1;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
+
+.button {
+	border-radius: 20px;
+	width: 8rem;
+	background-color: #543b83;
+	color: white;
+	font-family: "AskWhy";
+	letter-spacing: 0.15rem;
+	border: 3px solid black;
+	cursor: pointer;
+}
+
+.promotion-blocks {
+	display: flex;
+	justify-content: space-around;
+}
+
+.promo-title {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.promo-block {
+	border: 3px solid #543b83;
+	width: 25%;
+	border-radius: 10px;
+	min-height: 10rem;
+	background-color: #543b83;
+	color: white;
+
+	h4 {
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		padding: 1rem;
+	}
+}

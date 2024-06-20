@@ -1,0 +1,66 @@
+@use "./variables" as *;
+
+@mixin tablet {
+	@media (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+@mixin flex-center-horizontal {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin flex-center-both {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin user-image {
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 5%;
+}
+
+@mixin blue-button {
+	background-color: $BrainFlixBlue;
+	color: $PrimaryWhite;
+	display: flex;
+	border-radius: 4px;
+	margin-top: 0.625rem;
+	border: none;
+
+	&:hover {
+		background-color: $BrainFlixDarkBlue;
+	}
+}
+
+@mixin form-inputs {
+	width: 100%;
+	resize: none;
+	font-family: "AvenirNext", Verdana, Geneva, Tahoma, sans-serif;
+	background-color: $SecondaryWhiteAlabaster;
+	border-color: $SecondaryGreyMercury;
+	border-radius: 4px;
+	&:focus {
+		border: 2px solid $BrainFlixBlue;
+		outline: none;
+	}
+
+	&:focus-visible {
+		border: 2px solid $BrainFlixBlue;
+	}
+
+	&::placeholder {
+		color: $BrainFlixBlack;
+	}
+}

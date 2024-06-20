@@ -1,0 +1,32 @@
+@use "../../styles/partials/global" as *;
+
+header {
+	background-color: #543b83;
+	width: 100%;
+	color: white;
+}
+.header-nav {
+	display: flex;
+	@include flex-center-both;
+	height: 6rem;
+}
+
+.dinesafe-icon {
+	border-radius: 40px;
+	width: 80px;
+}
+
+.dinesafe-title {
+	letter-spacing: 2px;
+	font-size: 3rem;
+	width: 40%;
+}
+
+.nav-links {
+	display: flex;
+	align-self: flex-start;
+	justify-content: flex-end;
+	gap: 2rem;
+	text-align: end;
+	width: 40%;
+}

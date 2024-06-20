@@ -1,0 +1,23 @@
+@use "../../styles/partials/global" as *;
+
+.hero-image {
+	background-image: url("/src/assets/salad-background-food-tasty-olives-wooden-background-1369816-pxhere.com.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+	color: white;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+
+	.tagline-wrapper {
+		.tagline {
+			margin: 2rem 0 4rem 1rem;
+			text-align: left;
+			width: 60rem;
+			height: auto;
+			font-size: 5rem;
+		}
+	}
+}
