@@ -7,7 +7,10 @@
 
 #### GET
 Supports a query parameter string 'q' containing either a restaurant name or address
-e.g. GET /search?q=My+Awesome+Restaurant
+e.g. 
+
+```
+GET /search?q=My+Awesome+Restaurant
     returns back details in response data body:
     {
         data: [
@@ -28,3 +31,4 @@ e.g. GET /search?q=My+Awesome+Restaurant
 
         ]
     }
+```
